@@ -9,8 +9,7 @@ export default function configKarma(karma : Object) {
 
     const karmaConfig = getKarmaConfig(karma, {
         basePath: __dirname,
-        webpack:  WEBPACK_CONFIG_TEST,
-        coverage: true
+        webpack:  WEBPACK_CONFIG_TEST
     });
 
     karma.set(karmaConfig);
